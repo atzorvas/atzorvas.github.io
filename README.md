@@ -1,4 +1,4 @@
-jekyll-foundation-5-starter
+hojekyll-foundation-5-starter
 ===========================
 
 Start [a github pages](https://pages.github.com/) website powerd by [Jekyll](http://jekyllrb.com/docs/quickstart/) using [Foundation/SCSS](http://foundation.zurb.com/docs/sass.html) in under 5 minutes! 
