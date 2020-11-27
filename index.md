@@ -10,7 +10,7 @@ keywords: tzorvas, atzorvas, github, jekyll
     <div class="panel radius mvl">
       <p>
       <ul class="fa-ul">
-        <li><i class="fa-li fa fa-check-square"></i>Senior Software Engineer at <a href="https://withplum.com/">Plum Fintech</a>, an awesome company to be part of.</li>
+        <li><i class="fa-li fa fa-check-square"></i>Senior Software Engineer at <a href="https://www.instagram.com/withplum/">Plum Fintech</a>, an awesome company to be part of.</li>
         <li><i class="fa-li fa fa-check-square"></i>CS Engineer Student @<a href="//www.icsd.aegean.gr/icsd_en">ICSD Dept</a>, University of the Aegean</li>
         <li><i class="fa-li fa fa-check-square"></i>Linux user since 2008 (Gentoo, Archlinux, Debian, Ubuntu).</li>
         <li><i class="fa-li fa fa-check-square"></i>Android user since 2014.</li>
