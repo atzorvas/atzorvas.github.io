@@ -99,30 +99,19 @@
   <script>
   (function(){
     function rev(s){return s.split('').reverse().join('')}
-    function activate(a){
+    function activate(e){
+      var a = e.target.closest && e.target.closest('a[data-x]');
+      if(!a || !a.dataset.x) return;
       var url = rev(a.dataset.x);
       a.href = url;
       a.rel = 'noopener';
-      if(!/^mailto:/i.test(url)) a.target = '_blank';
       if(/^mailto:/i.test(url)) a.textContent = url.replace(/^mailto:/i,'');
-      return url;
+      else a.target = '_blank';
+      delete a.dataset.x;
     }
-    function onClick(e){
-      var a = e.target.closest('a[data-x]');
-      if(!a) return;
-      e.preventDefault();
-      var url = activate(a);
-      try{ if(/^mailto:/i.test(url)) location.href=url; else window.open(url,'_blank','noopener'); }catch(_){ }
-    }
-    function onKey(e){
-      if(e.key !== 'Enter' && e.key !== ' ') return;
-      var a = e.target.closest && e.target.closest('a[data-x]');
-      if(!a) return;
-      e.preventDefault();
-      activate(a);
-    }
-    document.addEventListener('click', onClick);
-    document.addEventListener('keydown', onKey);
+    ['pointerdown','mouseover','focusin'].forEach(function(t){
+      document.addEventListener(t, activate, true);
+    });
   })();
   </script>
 </main>
