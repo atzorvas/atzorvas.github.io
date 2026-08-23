@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.tzorvas.com/sitemap.xml
+Sitemap: https://tzorvas.com/sitemap.xml
